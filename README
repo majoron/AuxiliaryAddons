@@ -1,0 +1,32 @@
+AuxiliaryAddons
+===================
+
+AuxiliaryAddons is a gem that contains basic helpers.
+
+* The gem supports ruby 1.9.x & rails 3.x
+* The gem allows ...
+
+Quick Start
+=======
+In your Gemfile:
+
+  gem "auxiliary_addons", ">= 0.5.0"
+
+Installation
+=======
+
+* Type 'gem install --local auxiliary_addons' with root account if you have installed RubyGems.
+
+
+Example
+=======
+
+Example goes here.
+
+
+TODO
+=======
+
+* Add tests
+
+Copyright (c) 2011 arufanov, released under the MIT license.
