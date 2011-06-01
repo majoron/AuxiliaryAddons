@@ -10,7 +10,7 @@ Quick Start
 =======
 In your Gemfile:
 
-  gem "auxiliary_addons", ">= 0.5.0"
+  gem "auxiliary_addons", ">= 0.5.1"
 
 Installation
 =======
@@ -22,11 +22,5 @@ Example
 =======
 
 Example goes here.
-
-
-TODO
-=======
-
-* Add tests
 
 Copyright (c) 2011 arufanov, released under the MIT license.

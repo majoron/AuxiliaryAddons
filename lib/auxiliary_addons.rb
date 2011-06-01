@@ -8,33 +8,26 @@ require 'auxiliary_addons/html_helper'
 require 'auxiliary_addons/jscript_helper'
 require 'auxiliary_addons/list_helper'
 require 'auxiliary_addons/ruby_addons'
-require 'auxiliary_addons/tableless'
+require 'auxiliary_addons/tableless_model'
+require 'auxiliary_addons/validateable_model'
 
 # =
 #
 module AuxiliaryAddons
   def self.enable_activerecord
-    ActiveRecord::Base.class_eval do
-      # Include into model
-      include AuxiliaryAddons::RubyAddons
-      include AuxiliaryAddons::FilterUtils
-    end
+    ActiveRecord::Base.send :include, AuxiliaryAddons::RubyAddons
+    ActiveRecord::Base.send :include, AuxiliaryAddons::FilterUtils
   end
 
   def self.enable_actionpack
-    ActionController::Base.class_eval do
-      # Include into controller
-      include AuxiliaryAddons::RubyAddons
-    end
-    ActionView::Base.class_eval do
-      # Include into views
-      include AuxiliaryAddons::RubyAddons
-      include AuxiliaryAddons::ErrorHelper
-      include AuxiliaryAddons::FormHelper
-      include AuxiliaryAddons::HtmlHelper
-      include AuxiliaryAddons::JscriptHelper
-      include AuxiliaryAddons::ListHelper
-    end
+    ActionController::Base.send :include, AuxiliaryAddons::RubyAddons
+
+    ActionView::Base.send :include, AuxiliaryAddons::RubyAddons
+    ActionView::Base.send :include, AuxiliaryAddons::ErrorHelper
+    ActionView::Base.send :include, AuxiliaryAddons::FormHelper
+    ActionView::Base.send :include, AuxiliaryAddons::HtmlHelper
+    ActionView::Base.send :include, AuxiliaryAddons::JscriptHelper
+    ActionView::Base.send :include, AuxiliaryAddons::ListHelper
   end
 end
 
