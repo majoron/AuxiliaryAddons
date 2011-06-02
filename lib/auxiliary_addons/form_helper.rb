@@ -9,7 +9,9 @@ module AuxiliaryAddons
     # Checks if there is an error for a field of given object defined by given method
 
     def is_error_message_on(object, method)
-      if object.nil? || !object.errors.on(method)
+      # DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+      # if object.nil? || !object.errors.on(method)
+      if object.nil? || !object.errors[method] || (object.errors[method].size() == 0)
         return false
       end
       true
@@ -67,7 +69,9 @@ module AuxiliaryAddons
 
       # Checks if there is an error for a field defined by given method
       def is_error_message_on(method)
-        if @object.nil? || !@object.errors.on(method)
+        # DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+        # if @object.nil? || !@object.errors.on(method)
+        if @object.nil? || !@object.errors[method] || (@object.errors[method].size == 0)
           return false
         end
         true
