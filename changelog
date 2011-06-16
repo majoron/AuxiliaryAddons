@@ -18,3 +18,7 @@ that bug was created for 1.0 version of the AntHill component, bug is feature re
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Add the @attributes to tableless module
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Implement validateable_model and tablelessmodel
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Fixed: DEPRECATION WARNING: Errors#on have been deprecated, use Errors#[] instead.
+0.5 { Bug Report } [ AuxiliaryAddons ] / X / Renamed markers/arrow_(up|down).png to arrows/arrow_(up|down).png
+0.5 { Bug Report } [ AuxiliaryAddons ] / X / Fixed problem with output += image_tag("img.png") bu using raw
+0.5 { Bug Report } [ AuxiliaryAddons ] / X / Implemented set_focus_on_load based on prototype and jquery library
+0.5 { Bug Report } [ AuxiliaryAddons ] / X / Implemented cast_ids_to_i function

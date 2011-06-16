@@ -24,5 +24,18 @@ module AuxiliaryAddons
       return false
     end
 
+    # Convert params to arrary of ids
+    def cast_ids_to_i(params)
+      ids = []
+      ids << params["id"].to_i if !params["id"].nil?
+      if !params["ids"].nil?
+        params["ids"].each do |id|
+          ids << id.to_i
+        end
+      end
+      ids
+    end
+
+
   end
 end

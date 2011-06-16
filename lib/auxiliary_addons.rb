@@ -14,6 +14,15 @@ require 'auxiliary_addons/validateable_model'
 # =
 #
 module AuxiliaryAddons
+
+  # default options that can be overridden on the global level
+  @@options = {
+      :use_prototype             => false,      #
+      :use_jquery                => true,       #
+      :use_jquery_no_conflict    => false,      #
+  }
+  mattr_reader :options
+
   def self.enable_activerecord
     ActiveRecord::Base.send :include, AuxiliaryAddons::RubyAddons
     ActiveRecord::Base.send :include, AuxiliaryAddons::FilterUtils
