@@ -54,6 +54,15 @@ module AuxiliaryAddons
     #     mandatory_label(@user, :name, 'User Name', {:mandatory_symbol => '^', :symbol_class => 'red'})
     #     # Outputs: <label for="user_name">User Name<span class="red">^</span></label>
     #
+    # TODO: patch
+    # Instead of
+    # def mandatory_label(object, method, text = nil, options = {})
+    #   text = (text.blank? ? nil : text.to_s) || object.class.human_attribute_name(method)
+    # use
+    # def mandatory_label(object_name, method, text = nil, options = {})
+    #  if text.nil? or text.blank?
+    #    text = Kernel::const_get(object_name.to_s.camelcase).human_attribute_name(method)
+    #  end
     def mandatory_label(object, method, text = nil, options = {})
         # Here is patcha for rails 3.0.x
         # object_name = ActionController::RecordIdentifier.singular_class_name(object)
