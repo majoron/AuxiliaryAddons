@@ -14,6 +14,7 @@ that bug was created for 1.0 version of the AntHill component, bug is feature re
 
  Version 0.5
  -----------
+0.5 { Bug Report } [ AuxiliaryAddons ] / X / Handle special case (all selected) at cast_ids_to_i function
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Changelog, roadmap, knownbugs have been created
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Add the @attributes to tableless module
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Implement validateable_model and tablelessmodel

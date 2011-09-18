@@ -30,6 +30,7 @@ module AuxiliaryAddons
       ids << params["id"].to_i if !params["id"].nil?
       if !params["ids"].nil?
         params["ids"].each do |id|
+          next if id.to_i == 0 # Special case: all selected
           ids << id.to_i
         end
       end

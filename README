@@ -10,7 +10,7 @@ Quick Start
 =======
 In your Gemfile:
 
-  gem "auxiliary_addons", ">= 0.5.2"
+  gem "auxiliary_addons", ">= 0.5.3"
 
 Installation
 =======
