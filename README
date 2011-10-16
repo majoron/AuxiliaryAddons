@@ -4,13 +4,14 @@ AuxiliaryAddons
 AuxiliaryAddons is a gem that contains basic helpers.
 
 * The gem supports ruby 1.9.x & rails 3.x
+* The gem supports ruby 1.8.7 & rails 2.5.x
 * The gem allows ...
 
 Quick Start
 =======
 In your Gemfile:
 
-  gem "auxiliary_addons", ">= 0.5.3"
+  gem "auxiliary_addons", ">= 0.5.4"
 
 Installation
 =======

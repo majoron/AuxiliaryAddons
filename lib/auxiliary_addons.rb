@@ -8,8 +8,12 @@ require 'auxiliary_addons/html_helper'
 require 'auxiliary_addons/jscript_helper'
 require 'auxiliary_addons/list_helper'
 require 'auxiliary_addons/ruby_addons'
-require 'auxiliary_addons/tableless_model'
-require 'auxiliary_addons/validateable_model'
+
+# Only for Rails 3.x
+if Rails::VERSION::MAJOR >= 3
+  require 'auxiliary_addons/tableless_model'
+  require 'auxiliary_addons/validateable_model'
+end
 
 # =
 #
