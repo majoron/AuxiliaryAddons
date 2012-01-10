@@ -11,7 +11,7 @@ SET PATH=%PATH%;C:/Binutils/rubygems-1.3.5/bin
 
 echo on
 Rem: set enviroment and execute ant script
-gem install ./output/auxiliary_addons-0.5.4.gem --local
+gem install ./output/auxiliary_addons-0.5.5.gem --local
 rem gem uninstall auxiliary_addons
 rem rem gem list --local
 

@@ -12,6 +12,7 @@ require 'auxiliary_addons/ruby_addons'
 # Only for Rails 3.x
 if Rails::VERSION::MAJOR >= 3
   require 'auxiliary_addons/tableless_model'
+  require 'auxiliary_addons/tableless31_model'
   require 'auxiliary_addons/validateable_model'
 end
 

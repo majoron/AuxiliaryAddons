@@ -1,7 +1,7 @@
 require 'date'
 Gem::Specification.new do |s|
   s.name = %q{auxiliary_addons}
-  s.version = "0.5.4"
+  s.version = "0.5.5"
   s.date = Date.today.to_s
   s.summary = %q{AuxiliaryAddons is a gem that contains basic helpers.}
   s.description = %q{AuxiliaryAddons is a gem that contains basic helpers.}
