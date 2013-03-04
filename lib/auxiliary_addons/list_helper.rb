@@ -6,9 +6,12 @@ module AuxiliaryAddons
     # Common pagin and sorting helpers
     #
 
-    def checkable_field_header
-      output = check_box_tag "ids[]", 0, false, {:id => "ids_", :onclick => "checkedAll('list',this.checked);"}
-      output
+    # 
+    def checkable_field_header(options = {})
+      # Here is old implementation
+      # output = check_box_tag "ids[]", 0, false, {:id => "ids_", :onclick => "checkedAll('list',this.checked);"}
+      # output
+      check_box_tag "ids[]", 0, false, options
     end
 
     def sortable_field_header (header_name, field_name, form_name = nil)

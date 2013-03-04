@@ -14,6 +14,7 @@ that bug was created for 1.0 version of the AntHill component, bug is feature re
 
  Version 0.5
  -----------
+0.5 { Bug Report } [ AuxiliaryAddons ] / X / Add options to checkable_field_header
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Add tableless31_model for Rails 3.1.x
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Ruby 2.5.x support
 0.5 { Bug Report } [ AuxiliaryAddons ] / X / Handle special case (all selected) at cast_ids_to_i function
