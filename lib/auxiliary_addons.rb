@@ -1,9 +1,6 @@
 # Include
 require 'rubygems'
 require 'active_support'
-require 'auxiliary_addons/error_helper'
-require 'auxiliary_addons/filter_utils'
-require 'auxiliary_addons/form_helper'
 require 'auxiliary_addons/html_helper'
 require 'auxiliary_addons/jscript_helper'
 require 'auxiliary_addons/list_helper'
@@ -30,15 +27,12 @@ module AuxiliaryAddons
 
   def self.enable_activerecord
     ActiveRecord::Base.send :include, AuxiliaryAddons::RubyAddons
-    ActiveRecord::Base.send :include, AuxiliaryAddons::FilterUtils
   end
 
   def self.enable_actionpack
     ActionController::Base.send :include, AuxiliaryAddons::RubyAddons
 
     ActionView::Base.send :include, AuxiliaryAddons::RubyAddons
-    ActionView::Base.send :include, AuxiliaryAddons::ErrorHelper
-    ActionView::Base.send :include, AuxiliaryAddons::FormHelper
     ActionView::Base.send :include, AuxiliaryAddons::HtmlHelper
     ActionView::Base.send :include, AuxiliaryAddons::JscriptHelper
     ActionView::Base.send :include, AuxiliaryAddons::ListHelper
